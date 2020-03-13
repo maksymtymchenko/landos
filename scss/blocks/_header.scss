@@ -1,0 +1,60 @@
+.header {
+  background-image: url('/images/header/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  &__row {
+    padding: 15px;
+    @include flex();
+    justify-content: space-between;
+  }
+
+  &__nav {
+    &--links {
+      @include flex();
+      text-transform: uppercase;
+    }
+    &--link {
+      cursor: pointer;
+      margin-left: 30px;
+      transition: 0.3s linear all;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #4d4d4d;
+        opacity: 0;
+        margin-top: 4px;
+        transition: 0.3s ease all;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content {
+    margin: 90px 0 90px;
+
+    &--title {
+      font-size: 90px;
+      line-height: 67px;
+      font-weight: 500;
+      color: #4d4d4d;
+    }
+    &--subtitle {
+      font-size: 22px;
+      line-height: 67px;
+      font-weight: 500;
+      color: #707070;
+      margin-bottom: 10px;
+      position: relative;
+      left: 3px;
+    }
+  }
+}

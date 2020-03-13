@@ -1,0 +1,53 @@
+// Reset default settings
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Asap', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+// Mixins
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+// VARS
+$transition: 0.2s linear all;
+$textFontSize: 16px;
