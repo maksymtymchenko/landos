@@ -6,7 +6,7 @@
   color: #000;
   font-size: 16px;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 15px;
   transition: $transition;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .down {
+  margin-left: 15px;
   transition: $transition;
   background-color: #fff;
   display: inline-block;
@@ -57,5 +58,34 @@
     height: 4px;
     width: 60px;
     background-color: #4d4d4d;
+  }
+}
+
+.menu__burger {
+  cursor: pointer;
+  transition: $transition;
+  display: none;
+  span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 2px;
+    width: 24px;
+    margin: 4px;
+  }
+  &.active {
+    transition: $transition;
+    & span:nth-child(1) {
+      transform: rotate(45deg);
+      transform-origin: 32% 80%;
+    }
+
+    & span:nth-child(2) {
+      display: none;
+    }
+
+    & span:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 32% 80%;
+    }
   }
 }

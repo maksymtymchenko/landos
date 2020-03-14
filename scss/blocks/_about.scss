@@ -10,6 +10,7 @@
 
   &__content {
     margin-right: 30px;
+    flex-basis: 50%;
   }
 
   &__text {
@@ -17,6 +18,10 @@
     font-weight: 400;
     color: #4d4d4d;
     line-height: 32px;
-    margin: 25px;
+    margin: 25px 0;
+  }
+
+  &__img {
+    flex-basis: 50%;
   }
 }

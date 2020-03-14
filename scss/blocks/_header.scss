@@ -1,9 +1,8 @@
 .header {
-  background-image: url('/images/header/bg.jpg');
+  background: url('/images/header/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
 
   &__row {
     padding: 15px;
@@ -40,6 +39,7 @@
 
   &__content {
     margin: 90px 0 90px;
+    padding: 15px;
 
     &--title {
       font-size: 90px;
