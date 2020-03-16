@@ -60,6 +60,13 @@
     background-color: #4d4d4d;
   }
 }
+.centered {
+  text-align: center;
+  padding: 45px;
+  &::before {
+    margin: 10px auto;
+  }
+}
 
 .menu__burger {
   cursor: pointer;
