@@ -1,0 +1,14 @@
+.portfolio {
+  background-color: #f6f6f6;
+  padding: 50px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    justify-content: center;
+  }
+
+  &__img {
+    flex-basis: 33.3333333333%;
+  }
+}
