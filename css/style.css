@@ -267,6 +267,63 @@ button {
     -ms-flex-preferred-size: 33.3333333333%;
     flex-basis: 33.3333333333%; }
 
+.swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px; }
+
+.swiper-wrapper {
+  max-width: 900px; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4f4f4f; }
+
+.slider {
+  padding: 30px; }
+  .slider__img {
+    padding-left: 15px; }
+  .slider__content {
+    padding-right: 15px;
+    margin-left: 15px; }
+    .slider__content--name {
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      display: block;
+      color: #212121; }
+    .slider__content--rank {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 15px;
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+      color: #212121;
+      margin-bottom: 10px; }
+    .slider__content--desc {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #878787; }
+
 @media only screen and (max-width: 991px) {
   .about__content {
     margin-bottom: 25px; }
@@ -305,9 +362,20 @@ button {
           -ms-flex-direction: column;
           flex-direction: column; }
         .header__nav.active-nav .header__nav--link {
-          margin: 40px 0 4% 0; }
+          margin: 60px 0 4% 0; }
     .header__content {
-      margin: 60px 0 60px; } }
+      margin: 60px 0 60px; }
+  .slider {
+    padding: 20px; }
+    .slider__content--name {
+      font-size: 24px;
+      line-height: 30px; }
+    .slider__content--rank {
+      font-size: 12px;
+      line-height: 12px; }
+    .slider__content--desc {
+      font-size: 14px;
+      line-height: 20px; } }
 
 @media only screen and (max-width: 600px) {
   .header__content {
@@ -321,7 +389,15 @@ button {
   .services__item {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .swiper-slide {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .slider__img {
+    margin-bottom: 15px; } }
 
 @media only screen and (max-width: 480px) {
   .centered {
