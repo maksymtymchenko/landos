@@ -56,6 +56,13 @@ button {
     -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); }
 
+.send {
+  display: block;
+  margin: 70px auto 170px; }
+  .send:hover {
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); }
+
 .large-btn {
   max-width: 190px;
   margin: 0 auto;
@@ -106,6 +113,11 @@ button {
   .centered::before {
     margin: 10px auto; }
 
+.white {
+  color: #fff; }
+  .white::before {
+    background-color: #fff; }
+
 .menu__burger {
   cursor: pointer;
   -webkit-transition: 0.2s linear all;
@@ -138,6 +150,9 @@ button {
       -webkit-transform-origin: 32% 80%;
       -ms-transform-origin: 32% 80%;
       transform-origin: 32% 80%; }
+
+#myChart {
+  padding: 15px; }
 
 .header {
   background: url("/images/header/bg.jpg");
@@ -324,6 +339,97 @@ button {
       font-weight: 400;
       color: #878787; }
 
+.features {
+  padding: 50px 15px;
+  background-color: #f6f6f6; }
+  .features__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .features__item {
+    text-align: center;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%; }
+    .features__item--img {
+      margin: 0 auto; }
+    .features__item--num {
+      display: block;
+      margin: 15px 0;
+      font-size: 30px;
+      line-height: 32px;
+      font-weight: 500;
+      color: #212121; }
+    .features__item--desc {
+      text-transform: uppercase;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #212121; }
+
+.footer {
+  background-image: url("/images/form/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh; }
+  .footer__form {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px; }
+    .footer__form--name, .footer__form--email {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      height: 60px;
+      width: 100%;
+      max-width: 370px;
+      margin-right: 10px;
+      margin-bottom: 25px;
+      font-size: 16px;
+      padding: 10px; }
+    .footer__form--email {
+      margin-right: 0; }
+    .footer__form--text {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 750px;
+      font-size: 16px;
+      padding: 15px 15px 120px 15px; }
+  .footer__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    margin: 0 auto; }
+    .footer__text::before {
+      content: '';
+      width: 100%;
+      max-width: 1170px;
+      background-color: #fff;
+      height: 2px;
+      display: block;
+      margin: 0 auto; }
+
 @media only screen and (max-width: 991px) {
   .about__content {
     margin-bottom: 25px; }
@@ -375,7 +481,21 @@ button {
       line-height: 12px; }
     .slider__content--desc {
       font-size: 14px;
-      line-height: 20px; } }
+      line-height: 20px; }
+  .features {
+    padding: 40px 15px; }
+    .features__item {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-bottom: 20px; }
+  .footer__form--name, .footer__form--email {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 750px;
+    margin-right: 0;
+    margin-bottom: 25px; }
+  .footer__form--text {
+    padding: 15px 15px 80px 15px; } }
 
 @media only screen and (max-width: 600px) {
   .header__content {
@@ -401,7 +521,7 @@ button {
 
 @media only screen and (max-width: 480px) {
   .centered {
-    padding: 0px;
+    padding: 25px;
     margin: 20px 0; }
   .header__content {
     margin: 40px 0 40px; }
@@ -417,4 +537,9 @@ button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
   .portfolio {
-    padding: 40px; } }
+    padding: 40px; }
+  .features__item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .section__title {
+    font-size: 36px; } }

@@ -66,6 +66,29 @@
       }
     }
   }
+
+  .features {
+    padding: 40px 15px;
+    &__item {
+      flex-basis: 50%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    &__form {
+      &--name,
+      &--email {
+        flex-basis: 100%;
+        max-width: 750px;
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+      &--text {
+        padding: 15px 15px 80px 15px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -99,7 +122,7 @@
 
 @media only screen and (max-width: 480px) {
   .centered {
-    padding: 0px;
+    padding: 25px;
     margin: 20px 0;
   }
   .header__content {
@@ -128,6 +151,15 @@
 
   .portfolio {
     padding: 40px;
+  }
+
+  .features {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+  .section__title {
+    font-size: 36px;
   }
 }
 

@@ -24,20 +24,13 @@ let chart = new Chart(ctx, {
         label: 'Our company top skills',
         backgroundColor: 'white',
         borderColor: '#4d4d4d',
-        data: [7, 10, 8, 6, 0]
+        data: [3, 5, 4, 5, 0]
       }
     ]
   }
 })
 
 // Slide
-
-// let swiper = new Swiper('.swiper-container', {
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev'
-//   }
-// })
 
 let swiper = new Swiper('.swiper-container', {
   cssMode: true,
